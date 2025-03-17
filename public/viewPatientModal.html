@@ -1,0 +1,14 @@
+<div class="modal-header"> 
+    <h5 class="modal-title">Patient Details</h5> 
+    <button type="button" class="close" ng-click="vm.close()">&times;</button> 
+</div> 
+<div class="modal-body"> 
+    <p><strong>Name:</strong> {{vm.patient.patientDetails}}</p> 
+    <p><strong>DOB:</strong> {{vm.patient.dob}}</p> 
+    <p><strong>MRN:</strong> {{vm.patient.mrn}}</p> 
+    <p><strong>Information:</strong> {{vm.patient.information}}</p> 
+    <p><strong>History:</strong> {{vm.patient.history}}</p> 
+</div> 
+<div class="modal-footer"> 
+    <button class="btn btn-secondary" ng-click="vm.close()">Close</button> 
+</div>

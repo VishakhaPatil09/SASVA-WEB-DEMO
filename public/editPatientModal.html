@@ -1,0 +1,30 @@
+<div class="modal-header"> 
+    <h5 class="modal-title">Edit Patient</h5> 
+    <button type="button" class="close" ng-click="vm.cancel()">&times;</button> 
+</div> 
+<div class="modal-body"> 
+    <form name="editPatientForm" ng-submit="vm.submit()"> 
+        <div class="form-group"> 
+            <label for="name">Name</label> 
+            <input type="text" class="form-control" id="name" ng-model="vm.patient.patientDetails" required> 
+        </div> 
+        <div class="form-group"> 
+            <label for="dob">DOB</label> 
+            <input type="date" class="form-control" id="dob" ng-model="vm.patient.dob" required> 
+        </div> 
+        <div class="form-group"> 
+            <label for="mrn">MRN</label> 
+            <input type="text" class="form-control" id="mrn" ng-model="vm.patient.mrn" required> 
+        </div> 
+        <div class="form-group"> 
+            <label for="icd">Primary ICD Code</label> 
+            <input type="text" class="form-control" id="icd" ng-model="vm.patient.primaryIcd" required> 
+        </div> 
+        <div class="form-group"> 
+            <label for="cancerType">Cancer Type</label> 
+            <input type="text" class="form-control" id="cancerType" ng-model="vm.patient.cancerType" required> 
+        </div> 
+        <button type="submit" class="btn btn-primary">Submit</button> 
+        <button type="button" class="btn btn-secondary" ng-click="vm.cancel()">Cancel</button> 
+    </form> 
+</div>
